@@ -3,52 +3,52 @@ import './ExpenseForm.css';
 
 const ExpenseForm = () => {
 
-  // const [enteredTitle, setEnteredTitle] = useState('');
-  // const [enteredAmount, setEnteredAmount] = useState('');
-  // const [enteredDate, setEnteredDate] = useState('');
+  const [enteredTitle, setEnteredTitle] = useState('');
+  const [enteredAmount, setEnteredAmount] = useState('');
+  const [enteredDate, setEnteredDate] = useState('');
 
   // multiple state into a single state:
 
-  const [userInput, setUserInput] = useState({
-    enteredTitle: '',
-    enteredAmount: '',
-    enteredDate: '',
+  // const [userInput, setUserInput] = useState({
+  //   enteredTitle: '',
+  //   enteredAmount: '',
+  //   enteredDate: '',
 
   
-  // const titleChangeHandler = (event) => {
-  //   setEnteredTitle(event.target.value);
+  const titleChangeHandler = (event) => {
+    setEnteredTitle(event.target.value);
 
     // have to use this in each target
     
-     setUserInput({
-      ...userInput,
-      enteredTitle: event.target.value,
-    });
+    //  setUserInput({
+    //   ...userInput,
+    //   enteredTitle: event.target.value,
+    // });
     
     // setUserInput((prevState) => {
     //   return { ...prevState, enteredTitle: event.target.value };
     // });
-  // };
+  };
 
-  // const amountChangeHandler = (event) => {
-  //   setEnteredAmount(event.target.value);
-  // };
+  const amountChangeHandler = (event) => {
+    setEnteredAmount(event.target.value);
+  };
 
-  // const dateChangeHandler = (event) => {
-  //   setEnteredDate(event.target.value);
-  // };
+  const dateChangeHandler = (event) => {
+    setEnteredDate(event.target.value);
+  };
 
-  // const submitHandler = (event) => {
-  //   event.preventDefault();
+  const submitHandler = (event) => {
+    event.preventDefault();
     
-  //   const expenseData = {
-  //     title: enteredTitle,
-  //     amount: enteredAmount,
-  //     date: new Date(enteredDate)
-  //   };
+    const expenseData = {
+      title: enteredTitle,
+      amount: enteredAmount,
+      date: new Date(enteredDate)
+    };
 
-  //   console.log(expenseData);
-  // };
+    console.log(expenseData);
+  };
 
   // const changeTitleHandller = (event) =>{
   //   console.log(event);
