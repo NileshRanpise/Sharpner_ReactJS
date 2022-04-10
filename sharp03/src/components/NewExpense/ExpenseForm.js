@@ -5,7 +5,7 @@ import './ExpenseForm.css';
 const ExpenseForm = () => {
 
   const changeTitleHandller = (event) =>{
-    // console.log(event);
+    console.log(event);
     console.log(event.target.value)
   }
 
