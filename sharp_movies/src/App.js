@@ -76,6 +76,9 @@ function App() {
       <section>
         <button onClick={fetchMoviesHandler}>Fetch Movies</button>
       </section>
+      <section>
+        <button onClick={fetchMoviesHandler}>Delete Movies</button>
+      </section>
       <section>{content}</section>
     </React.Fragment>
   );
